@@ -4,6 +4,7 @@
   "type": "module",
   "description": "AgriTechno - Smart Precision Agriculture & Farmer Ecosystem (MERN Stack)",
   "scripts": {
+    "build": "npm --prefix frontend run build",
     "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
     "server": "npm run start --prefix backend",
     "server:dev": "npm run dev --prefix backend",
@@ -24,6 +25,15 @@
   ],
   "author": "neerajyadav5710-stack <neerajyadav5710@gmail.com>",
   "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "morgan": "^1.10.0"
+  },
   "devDependencies": {
     "concurrently": "^9.1.2"
   }
